@@ -1,13 +1,12 @@
 import React from "react";
-import { Nav, NavLink } from "./components/Navbar/NavbarElements";
+import { BrowserRouter as Router } from 'react-router-dom';
+import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <>
-     <Nav>
-     <NavLink to='/'>Pizza</NavLink>
-     </Nav>
-    </>
+    <Router>
+     <Navbar/>
+    </Router>
   );
 }
 
