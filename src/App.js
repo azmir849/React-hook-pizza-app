@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router } from 'react-router-dom';
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
+import Hero from './components/Hero';
+import Products from './components/Products';
+import { productData, productDataTwo } from './components/Products/data';
 import { GlobalStyle } from "./globalStyles";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <Router>
        <GlobalStyle />
      <Hero />
+     <Products heading='Choose your favorite one' data={productData} />
     </Router>
   );
 }
